@@ -4,7 +4,7 @@ import "firebase/compat/auth";
 import * as firebaseui from "firebaseui";
 import "firebaseui/dist/firebaseui.css";
 import { firebaseConfig } from "./firebase";
-
+import "./App.css";
 // Initialize Firebase if not already initialized
 if (!firebase.apps.length) {
   firebase.initializeApp(firebaseConfig);
@@ -31,7 +31,7 @@ const Login = () => {
   }, []);
 
   return (
-    <div>
+    <div className="firebaseui-auth-container">
       <h2>Sign In</h2>
       <div id="firebaseui-auth-container"></div>
     </div>
